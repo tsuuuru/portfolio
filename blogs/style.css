@@ -1,0 +1,383 @@
+/* 全体のスタイル */
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background:linear-gradient(180deg, #333 0%, #333 40px, #ffeecc 40px, #ffeecc 100%);
+}
+
+main {
+  padding: 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+a{
+  color:#ffaa66;
+  text-decoration-line: underline;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  display: flex;
+  margin: 15px 20px;
+}
+
+header h1{
+  background-color: #ffaa66;
+  margin: 0px;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 20px;
+}
+
+/* ナビゲーション */
+#homeNav{
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#homeNav ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#homeNav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  padding: 5px 30px;
+}
+
+#homeNav ul li a:hover {
+  color: #ffaa66;
+}
+
+#home .nav-home,
+#article-list .nav-article-list
+{
+  color: #ffaa66;
+  border-bottom: solid 2px #ffaa66;
+}
+
+/* サイドコンテンツ */
+aside{
+  min-width:280px;
+  max-width:340px;
+  background-color:#ffeebb;
+  padding:10px;
+}
+
+aside h1{
+  color:#ffaa66;
+}
+
+/* フッター */
+footer {
+    background-color: #ffaa66;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ホーム */
+
+.homeImage{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeImage img{
+  margin: 0 auto 10px auto;
+}
+
+#content-W{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2%;
+}
+
+#homeContent {
+  margin-bottom: 20px;
+  max-width: 800px;
+  min-width: 780px;
+  padding-right: 20px;
+}
+
+#homeContent > search-category > h2 {
+  color: #333;
+}
+
+.news ul{
+  font-size: 13px;
+  color: grey;
+}
+
+.news li{
+  margin: 10px;
+}
+.news a{
+  text-decoration: none;  
+  font-size: 16px;
+}
+
+/* インデックス */
+#search{
+  padding:20px;
+}
+
+.search-category h2{
+  font-size: 1.2em;
+}
+
+/*
+.search-category h2:after{
+  display: block;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 10px;
+  background-color: #ddd;
+}
+*/
+
+.search-category ul{
+  display: flex;
+}
+
+.search-category li{
+  list-style:none;
+  margin-right: 10px;
+  padding: 3px 10px;
+  background-color:#A6E6C6;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.85em;
+  border:solid 1px #9DB;
+  border-radius: 5px;
+}
+
+.search-category li:hover{
+  background-color: #468666;
+  color: #fff
+}
+
+.index>ul{
+  padding: 0;
+  min-width: 700px;
+}
+
+.index > ul > li{
+  position: relative;
+  margin: 10px 0;
+  background-color: #f3f3f3;
+  list-style:none;
+}
+
+.index a{
+  display: flex;
+  text-decoration: none;
+  max-height:120px;
+}
+
+.index img{
+  margin: 0px;
+  width: 200px;
+}
+
+.index .category{
+  display: inline;
+  color: #fff;
+  padding: 2px 10px 0 10px;
+  position: absolute;
+  left: 0px;
+}
+
+.index .category[data-category="life"]{
+  background-color:#33ccff;
+}
+
+.index .category[data-category="study"]{
+  background-color:#cc33ff;
+}
+
+.index .category[data-category="parttime"]{
+  background-color:#cc33ff;
+}
+
+.index .category[data-category="job-hunting"]{
+  background-color:#cc33ff;
+}
+
+.index .category[data-category="fashion"]{
+  background-color:#cc33ff;
+}
+
+.index .category[data-category="love"]{
+  background-color:#cc33ff;
+}
+
+.index .category[data-category="else"]{
+  background-color:#cc33ff;
+}
+
+.index div{
+  margin: 5px 5px 0 20px;
+  left: 200px;
+  width: calc(100% - 200px);
+}
+
+.article-title{
+  position:relative;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  width:100%;
+}
+
+.index div ul{
+  padding: 0;
+}
+
+.index div li{
+  display: inline;
+  font-size: 0.75em;
+  color: #33ccff;
+  font-weight: bold;
+}
+
+.trends-day{
+  color: #666;
+  font-size: 0.75em;
+  display: inline;
+  position: absolute;
+  right: 20px;
+  bottom:10px;
+  margin: 0 0 0 auto;
+}
+
+/* 記事スタイル */
+
+#article{
+  margin: 3%;
+  
+}
+
+#article h1{
+  text-align: center;
+  font-size: 32px;
+}
+
+/* h2 */
+
+#article h2,
+.index h2{
+  padding: 10px 0 10px 10px;
+  margin-top: 30px;
+}
+
+#article h2.type1{
+  background-color: #B6F6D6;
+  border-left: solid 4px #468666;
+}
+
+#article h2.type2,
+.index h2.type1{
+  border-left: solid 4px #468666;
+}
+
+#article h2.type3{
+  border-bottom: solid 2px #468666;
+}
+
+#article h2.type4{
+  color: #56C6A6;
+  padding: 10px 0 0px 10px;
+}
+
+/* h3 */
+
+#article h3{
+  padding: 10px 0 10px 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#article section section p{
+  margin-left: 20px;
+}
+
+#article h3.type1{
+  background-color: #B6F6D6;
+  border-left: solid 4px #468666;
+}
+
+#article h3.type2{
+  border-left: solid 4px #468666;
+}
+
+#article h3.type3{
+  border-bottom: solid 2px #468666;
+}
+
+#article h3.type4{
+  color: #56C6A6;
+  padding: 10px 0 0px 10px;
+}
+
+#article .box-type1{
+  border: solid 20px #ffeebb;
+  padding:0px 20px 10px;
+}
+
+#article .box-type1 h3{
+  padding: 0px;
+  color: #ff9900;
+  font-size:1.25em;
+}
+
+/* h4 */
+
+#article h4{
+  padding: 10px 0 10px 10px;
+  margin-left: 20px;
+}
+
+#article h4.type1{
+  background-color: #B6F6D6;
+  border-left: solid 4px #468666;
+}
+
+#article h4.type2{
+  border-left: solid 4px #468666;
+}
+
+#article h4.type3{
+  border-bottom: solid 2px #468666;
+}
+
+#article h4.type4{
+  color: #56C6A6;
+  padding: 10px 0 0px 10px;
+}
+
+#article ul{
+  list-style:none;
+}
+
+#article ul.type2 li{
+  
+}
