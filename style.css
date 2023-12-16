@@ -1,0 +1,295 @@
+/* 全体のスタイル */
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background:linear-gradient(180deg, #333 0%, #333 40px, #ffeecc 40px, #ffeecc 100%);
+}
+
+main {
+  padding: 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+a{
+  color:#ffaa66;
+  text-decoration-line: underline;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  display: flex;
+  margin: 15px 20px;
+}
+
+header h1{
+  background-color: #ffaa66;
+  margin: 0px;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 20px;
+}
+
+/* ナビゲーション */
+#homeNav{
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#homeNav ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#homeNav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  padding: 5px 30px;
+}
+
+#homeNav ul li a:hover {
+  color: #ffaa66;
+}
+
+#home .nav-home
+{
+  color: #ffaa66;
+  border-bottom: solid 2px #ffaa66;
+}
+
+/* フッター */
+footer {
+    background-color: #ffaa66;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ホーム */
+
+.center{
+  width:100%;
+  display: flex;
+  justify-content: center
+}
+
+.faceImage{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 480px;
+  max-height: auto;
+  width:100%;
+}
+
+.faceImage img{
+  width:100%;
+  height:auto;
+}
+
+#content{
+  background-color: #fff;
+  margin: auto;
+  max-width: 1200px;
+  padding: 100px;
+}
+
+h1{
+  font-size:2em;
+  margin-top: 60px;
+}
+
+h2{
+  margin-top:40px;
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+.right{
+  text-align: right;
+}
+
+#greeting, #career, #works, #contact{
+  text-align:center;
+}
+
+/* プロフィール */
+.name{
+  font-size:1.5em;
+  color: #ffaa66;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bold{
+  font-weight: bold;
+  color: #666;
+}
+
+.property{
+  margin: 0px;
+}
+
+.name-pic p{
+  text-align: center;
+}
+
+.name-flex{
+  display:flex;
+}
+
+.faceImage{
+  margin-bottom: 40px;
+}
+
+ul{
+  text-align:left;
+}
+
+.hobby{
+  margin: 0 15% 0 15%;
+}
+
+li{
+  margin: 0px auto 10px 10px;
+}
+
+li span{
+  color: #CE7703;
+}
+
+li > p{
+  margin: 0px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.works-flex{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.thumb{
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  height: 180px;
+  width: 360px;
+  padding: 0px;
+  text-align: center;
+}
+
+.thumb a{
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.thumb a :hover{
+  margin-top: 0px;
+  opacity: .2;
+}
+
+.thumb img{
+  border-radius: 20px;
+}
+
+.thumb p{
+  transition: all .3s ease;
+  position: absolute;
+  background-color: #ffaa66;
+  width: 360px;
+  height: 180px;
+  margin-top: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb p span{
+  position: absolute;
+  color: #ffaa66;
+  font-size: 0.6em;
+  margin-top: 70px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#mywork h1{
+  text-align:center;
+  margin-top: 0px;
+  border-bottom: solid 1px #000;
+}
+
+#mywork ul{
+  padding: 0px;
+}
+
+#mywork img{
+  width: 100%;
+}
+
+.works{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
+.box{
+  font-size:0.66em;
+  font-weight: normal;
+  color: #444;
+  background-color: #FFDF9F;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.box li{
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.box p{
+  margin: 0px 20px 0px 20px;
+}
+
+.box span{
+  font-weight: bold;
+}
+
+.caption{
+  margin-top: 20px;
+}
+
+.button{
+  background-color: #ffaa66;
+  padding:10px 20px;
+  color: #fff;
+  text-decoration:none;
+  border-radius: 25px;
+}
+
+.button :hover{
+  color: #fff;
+  background-color: #ffcc99;
+}
